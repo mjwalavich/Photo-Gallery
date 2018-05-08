@@ -1,0 +1,105 @@
+/***************************/
+/***** UNIVERSAL****/
+/***************************/
+
+* {
+  box-sizing: border-box;
+}
+
+/***************************/
+/***** CONTAINERS ****/
+/***************************/
+
+.container,
+.main-container {
+
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+    width: 90%;
+}
+
+
+/***************************/
+/***** BASE ****/
+/***************************/
+
+.thumbnails {
+  margin: 30px;
+}
+
+.thumbnails:hover {
+  box-shadow: 0 0 15px grey;
+}
+
+#search {
+  padding: 10px;
+  margin: 40px auto 0 auto;
+  border-radius: 5px;
+  font-family: courier;
+}
+
+/***************************/
+/***** LIGHTBOX ****/
+/***************************/
+
+.lb-data .lb-caption {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 100;
+  text-align: center;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.lb-dataContainer {
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+.lb-data {
+  display: flex;
+  justify-content: center;
+}
+
+.lb-closeContainer {
+  display: none;
+}
+
+.lightbox .lb-image {
+  border:none;
+  border-radius: 0;
+}
+
+.lb-nav a.lb-prev {
+  left: -20%;
+
+}
+
+.lb-nav a.lb-next {
+
+}
+/***************************/
+/***** MEDIA QUERIES ****/
+/***************************/
+
+@media (min-width: 768px){
+
+  .container {
+    max-width: 1100px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #search {
+    width: 480px;
+  }
+}

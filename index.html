@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang=en>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+      <title>Intaractive Photo Gallery</title>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="js/lightbox/css/lightbox.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="main-container">
+         <input type="text" name="search" id="search" placeholder="Search">
+         <div class="container">
+            <div>
+               <a href="photos/01.jpg" data-lightbox="phototrip" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+               <img src="photos/thumbnails/01.jpg" alt="Picture of Bales" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/02.jpg" data-lightbox="phototrip" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here.">
+               <img src="photos/thumbnails/02.jpg" alt="Picture of a Lake" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/03.jpg" data-lightbox="phototrip" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+               <img src="photos/thumbnails/03.jpg" alt="Picture of a Mountain" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/04.jpg" data-lightbox="phototrip" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+               <img src="photos/thumbnails/04.jpg" alt="Picture of an Iceberg" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/05.jpg" data-lightbox="phototrip" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+               <img src="photos/thumbnails/05.jpg" alt="Picture of Cliffs" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/06.jpg" data-lightbox="phototrip" data-title="Fall is coming, I love when the leaves on the trees start to change color.">
+               <img src="photos/thumbnails/06.jpg" alt="Picture of Fall Trees" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/07.jpg" data-lightbox="phototrip" data-title="I drove past this plantation yesterday, everything is so green!">
+               <img src="photos/thumbnails/07.jpg" alt="Picture of a Plantation" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/08.jpg" data-lightbox="phototrip" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!">
+               <img src="photos/thumbnails/08.jpg" alt="Picture of Sand Dunes" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/09.jpg" data-lightbox="phototrip" data-title="We enjoyed a quiet stroll down this countryside lane.">
+               <img src="photos/thumbnails/09.jpg" alt="Picture of a Country Lane" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/10.jpg" data-lightbox="phototrip" data-title="Sunset at the coast! The sky turned a lovely shade of orange.">
+               <img src="photos/thumbnails/10.jpg" alt="Picture of a Sunset" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/11.jpg" data-lightbox="phototrip" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking.">
+               <img src="photos/thumbnails/11.jpg" alt="Picture of a Cave" class="thumbnails">
+               </a>
+            </div>
+            <div>
+               <a href="photos/12.jpg" data-lightbox="phototrip" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+               <img src="photos/thumbnails/12.jpg" alt="Picture of a Meadow" class="thumbnails">
+               </a>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/lightbox/js/lightbox.js"></script>
+      <script>
+         lightbox.option({
+           'showImageNumberLabel': false,
+           'wrapAround': true,
+           'maxWidth': 800,
+           'maxHeight': 800,
+           'positionFromTop': 100,
+           'alwaysShowNavOnTouchDevices': true
+         });
+      </script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
